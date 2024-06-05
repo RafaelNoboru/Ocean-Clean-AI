@@ -1,17 +1,21 @@
 {
     "build": {
-      "builder": "Docker"
+      "dockerfilePath": "Dockerfile"
     },
     "start": "java -jar /app.jar",
     "envs": {
       "SPRING_DATASOURCE_URL": {
-        "plugin": "postgresql"
+        "fromPlugin": "postgresql",
+        "key": "DATABASE_URL"
       },
       "SPRING_DATASOURCE_USERNAME": {
-        "plugin": "postgresql"
+        "fromPlugin": "postgresql",
+        "key": "PGUSER"
       },
       "SPRING_DATASOURCE_PASSWORD": {
-        "plugin": "postgresql"
-      }
+        "fromPlugin": "postgresql",
+        "key": "PGPASSWORD"
+      },
+      "SPRING_DATASOURCE_DRIVER_CLASS_NAME": "org.postgresql.Driver"
     }
   }
