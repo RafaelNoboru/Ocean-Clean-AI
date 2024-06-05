@@ -1,0 +1,17 @@
+{
+    "build": {
+      "builder": "Docker"
+    },
+    "start": "java -jar /app.jar",
+    "envs": {
+      "SPRING_DATASOURCE_URL": {
+        "plugin": "postgresql"
+      },
+      "SPRING_DATASOURCE_USERNAME": {
+        "plugin": "postgresql"
+      },
+      "SPRING_DATASOURCE_PASSWORD": {
+        "plugin": "postgresql"
+      }
+    }
+  }
