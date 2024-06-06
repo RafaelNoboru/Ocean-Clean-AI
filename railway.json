@@ -6,15 +6,15 @@
     "envs": {
       "SPRING_DATASOURCE_URL": {
         "fromPlugin": "postgresql",
-        "key": "DATABASE_URL"
+        "key": "postgresql://postgres:WCWcNoavZqIBHBbxgEYGMqBMvMGNbuOL@roundhouse.proxy.rlwy.net:15081/railway"
       },
       "SPRING_DATASOURCE_USERNAME": {
         "fromPlugin": "postgresql",
-        "key": "PGUSER"
+        "key": "postgres"
       },
       "SPRING_DATASOURCE_PASSWORD": {
         "fromPlugin": "postgresql",
-        "key": "PGPASSWORD"
+        "key": "WCWcNoavZqIBHBbxgEYGMqBMvMGNbuOL"
       },
       "SPRING_DATASOURCE_DRIVER_CLASS_NAME": "org.postgresql.Driver"
     }
